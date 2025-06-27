@@ -1,38 +1,26 @@
 #include <iostream>
 #include<vector>
 #include<unordered_map>
+#include<map>
 
 
 
 
 int main()
 {
-    std::vector<int> v = {2,3,4,5};
+    std::map<std::string, int> m = {{"Jared",34 },{"Paulina",21}};
 
 
-    v.erase(v.begin());
-
-    for (int i = 0; i < v.size(); i++)
+    for (int i = 0; i < 2; i++)
     {
-        std::cout<<v[i]<<" ";
-    }
-
-    std::unordered_map<int, int> m;
-
-    m[5] = 0;
-    m[7] = 1;
-
-    
-    for(auto i : m){
-
-        if(i.first == 5){
-
-            std::cout<<"ok";
-        }
-
-
+        std::cout<<m["Jared"];
     }
     
+     
+    
+
+
+
 
     return 0;
 }
